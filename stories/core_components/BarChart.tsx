@@ -5,6 +5,8 @@ import { screenshotWrap } from '@gooddata/test-storybook';
 import { BarChart } from '../../src/index';
 import { onErrorHandler } from '../mocks';
 import { CUSTOM_COLORS } from '../data/colors';
+import { wrap } from '../utils/wrap';
+
 import {
     ATTRIBUTE_1,
     ATTRIBUTE_2,
@@ -34,8 +36,8 @@ storiesOf('Core components/BarChart', module)
         )
     ))
     .add('stacked', () => (
-        screenshotWrap(
-            <div style={wrapperStyle}>
+        wrap(
+            <div>
                 <BarChart
                     projectId="storybook"
                     measures={[MEASURE_1]}
@@ -45,7 +47,9 @@ storiesOf('Core components/BarChart', module)
                     LoadingComponent={null}
                     ErrorComponent={null}
                 />
-            </div>
+            </div>,
+            'auto',
+            '100%'
         )
     ))
     .add('one measure with alias', () => (
