@@ -56,9 +56,13 @@ class DynamicChart extends React.Component<any, any> {
     private fixtures: any;
     private legendOptions: any;
     private chartTypes: any;
+    private now: any;
 
     constructor(props: any) {
         super(props);
+
+        this.now = performance.now();
+
         this.fixtures = {
             ...fixtureDataSets,
             updatedBarChartWith3MetricsAndViewByAttribute: (dataSet => immutableSet(
@@ -112,6 +116,12 @@ class DynamicChart extends React.Component<any, any> {
     public render() {
         const { dataSet, legendOption, chartType } = this.state;
 
+        this.now = performance.now();
+
+        const measure = () => {
+            console.log(performance.now() - this.now);
+        };
+
         const setDataSet = (dataSetName: any) => (() => this.setDataSet(dataSetName));
         const setLegend = (legendOptionsItem: any) => (() => this.setLegend(legendOptionsItem));
         const setChartType = (chartTypeOption: any) => (() => this.setChartType(chartTypeOption));
@@ -126,6 +136,7 @@ class DynamicChart extends React.Component<any, any> {
                         {...dataSet}
                         onDataTooLarge={action('Data too large')}
                         onNegativeValues={action('Negative values in pie chart')}
+                        afterRender={measure}
                     />, 600))}
                 </div>
                 <br />
