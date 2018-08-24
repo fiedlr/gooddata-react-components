@@ -93,8 +93,12 @@ export default class Chart extends React.Component<IChartProps> {
         return true;
     }
 
-    public componentDidUpdate() {
-        this.createChart(this.props.config);
+    public componentDidUpdate(prevProps: IChartProps) {
+        if (this.props.callback === prevProps.callback) {
+            this.chart.update(this.props.config);
+        } else {
+            this.createChart(this.props.config);
+        }
     }
 
     public componentWillUnmount() {
