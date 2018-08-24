@@ -1,6 +1,5 @@
 // (C) 2007-2018 GoodData Corporation
 import cloneDeep = require('lodash/cloneDeep');
-import { WHITE, GRAY } from '../../utils/color';
 
 const HEATMAP_TEMPLATE = {
     chart: {
@@ -10,18 +9,16 @@ const HEATMAP_TEMPLATE = {
         spacingRight: 0
     },
     defs: {
+        // Doesn't work because styled mode is not enabled
         emptyDataPattern: {
             tagName: 'pattern',
             id: 'empty-data-pattern',
             patternUnits: 'userSpaceOnUse',
-            width: 4,
-            height: 4,
+            width: 10,
+            height: 10,
             children: [{
                 tagName: 'path',
-                d: 'M 10 0 L 0 10 M 9 11 L 11 9 M 4 11 L 11 4 M -1 1 L 1 -1 M -1 6 L 6 -1',
-                stroke: GRAY,
-                strokeWidth: 1,
-                fill: WHITE
+                d: 'M 10 0 L 0 10 M 9 11 L 11 9 M 4 11 L 11 4 M -1 1 L 1 -1 M -1 6 L 6 -1'
             }]
         }
     },
