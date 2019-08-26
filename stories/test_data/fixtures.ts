@@ -284,9 +284,10 @@ export const pivotTableWithColumnRowAttributesAndTotals: any = {
 };
 
 export const pivotTableWithSubtotals: any = {
-    executionRequest: require("../test_data/pivot_table_with_subtotals_request.json").execution,
-    executionResponse: require("../test_data/pivot_table_with_subtotals_response.json").executionResponse,
-    executionResult: require("../test_data/pivot_table_with_subtotals_result.json").executionResult,
+    executionRequest: require("../test_data/pivot_table_with_subtotals_request_mock.json").execution,
+    executionResponse: require("../test_data/pivot_table_with_subtotals_response_mock.json")
+        .executionResponse,
+    executionResult: require("../test_data/pivot_table_with_subtotals_result_mock.json").executionResult,
 };
 
 export const comboWithTwoMeasuresAndViewByAttribute = barChartWith2MetricsAndViewByAttribute;
@@ -592,9 +593,9 @@ export const heatmapMetricRowColumn: any = {
 };
 
 export const heatmapEmptyCells: any = {
-    executionRequest: require("./heat_map_with_empty_cells_request.json").execution,
+    executionRequest: require("./heat_map_with_empty_cells_request_mock.json").execution,
     executionResponse: require("./heat_map_with_empty_cells_response.json").executionResponse,
-    executionResult: require("./heat_map_with_empty_cells_result.json").executionResult,
+    executionResult: require("./heat_map_with_empty_cells_result_mock.json").executionResult,
 };
 
 export const pivotTableWithTwoMetricsFourAttributesSubtotals = {
