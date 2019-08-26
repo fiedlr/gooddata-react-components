@@ -1,35 +1,35 @@
 // (C) 2007-2019 GoodData Corporation
 
 const heatmapAfmExecutions = [{
-        execution: require('./stories/test_data/heat_map_with_58_rows_mock_request.json'),
-        executionResult: require('./stories/test_data/heat_map_with_58_rows_mock_result.json')
+        execution: require('./stories/test_data/heat_map_with_58_rows_request_mock.json'),
+        executionResult: require('./stories/test_data/heat_map_with_58_rows_result_mock.json')
     }, {
-        execution: require('./stories/test_data/heat_map_with_60_rows_mock_request.json'),
-        executionResult: require('./stories/test_data/heat_map_with_60_rows_mock_result.json')
+        execution: require('./stories/test_data/heat_map_with_60_rows_request_mock.json'),
+        executionResult: require('./stories/test_data/heat_map_with_60_rows_result_mock.json')
     }, {
-        execution: require('./stories/test_data/heat_map_with_empty_cells_request.json'),
-        executionResult: require('./stories/test_data/heat_map_with_empty_cells_result.json')
+        execution: require('./stories/test_data/heat_map_with_empty_cells_request_mock.json'),
+        executionResult: require('./stories/test_data/heat_map_with_empty_cells_result_mock.json')
     }];
 
 const pivotTableAfmExecutions = [
     {
-        execution: require("./stories/test_data/pivot_table_with_subtotals_request.json"),
-        executionResponse: require("./stories/test_data/pivot_table_with_subtotals_response.json"),
-        executionResult: require("./stories/test_data/pivot_table_with_subtotals_result.json"),
+        execution: require("./stories/test_data/pivot_table_with_subtotals_request_mock.json"),
+        executionResponse: require("./stories/test_data/pivot_table_with_subtotals_response_mock.json"),
+        executionResult: require("./stories/test_data/pivot_table_with_subtotals_result_mock.json"),
     }];
 
 const pivotTableSubtotalsAfmExecutions = [
     {
-        execution: require("./stories/test_data/pivot_table_with_subtotals_2_measures_request.json"),
-        executionResponse: require("./stories/test_data/pivot_table_with_subtotals_2_measures_response.json"),
-        executionResult: require("./stories/test_data/pivot_table_with_subtotals_2_measures_result.json"),
+        execution: require("./stories/test_data/pivot_table_with_subtotals_2_measures_request_mock.json"),
+        executionResponse: require("./stories/test_data/pivot_table_with_subtotals_2_measures_response_mock.json"),
+        executionResult: require("./stories/test_data/pivot_table_with_subtotals_2_measures_result_mock.json"),
     }];
 
 const pivotTableGrandtotalSubtotalAfmExecutions = [
     {
-        execution: require("./stories/test_data/pivot_table_with_grandtotal_subtotal_2_measures_request.json"),
-        executionResponse: require("./stories/test_data/pivot_table_with_grandtotal_subtotal_2_measures_response.json"),
-        executionResult: require("./stories/test_data/pivot_table_with_grandtotal_subtotal_2_measures_result.json"),
+        execution: require("./stories/test_data/pivot_table_with_grandtotal_subtotal_2_measures_request_mock.json"),
+        executionResponse: require("./stories/test_data/pivot_table_with_grandtotal_subtotal_2_measures_response_mock.json"),
+        executionResult: require("./stories/test_data/pivot_table_with_grandtotal_subtotal_2_measures_result_mock.json"),
     }];
 
 const getBaseProjectSchema = (title, identifier) => {
