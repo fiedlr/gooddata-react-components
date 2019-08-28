@@ -6,10 +6,11 @@ function registerMocks(app) {
         randomSeed: 'reactcomponents',
         pollCount: 1
     };
-    console.log(__dirname);
-    schema.absolutePathToRootMockFile = __dirname + '../mock-schema.js';
-    schema.suffixOfMockFilesImportedInRootMockFile = 'mock.js';
-    return register.default(app, { schema, config });
+    const options = { schema, config };
+    options.absolutePathToRootMockFile = __dirname + '/../mock-schema.js';
+    options.suffixOfMockFilesImportedInRootMockFile = 'mock.js';
+    options.getSchema = mockObject => mockObject;
+    return register.default(app, options);
 }
 
 module.exports = registerMocks;

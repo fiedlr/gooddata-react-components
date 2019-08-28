@@ -41,11 +41,11 @@ const getBaseProjectSchema = (title, identifier) => {
         groups: [{
             metrics: [{
                     identifier: '1',
-                    title: 'Amount'
+                    title: 'Amountttt'
                 },
                 {
                     identifier: '2',
-                    title: 'Bigger Amount'
+                    title: 'Biggggerrrrr Amount'
                 },
                 {
                     identifier: '3',
