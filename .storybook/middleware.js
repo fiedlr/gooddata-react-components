@@ -1,3 +1,4 @@
+const path = require('path');
 const register = require('@gooddata/mock-js');
 
 function registerMocks(app) {
@@ -7,7 +8,7 @@ function registerMocks(app) {
         pollCount: 1
     };
     const options = { schema, config };
-    options.absolutePathToRootMockFile = __dirname + '/../mock-schema.js';
+    options.absolutePathToRootMockFile = path.join(__dirname, '..', 'mock-schema.js');
     options.suffixOfMockFilesImportedInRootMockFile = 'mock.js';
     options.getSchema = mockObject => mockObject;
     return register.default(app, options);
