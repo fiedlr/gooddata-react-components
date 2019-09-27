@@ -1136,25 +1136,10 @@
     eslint-plugin-no-only-tests "^2.3.1"
     eslint-plugin-react "7.6.1"
 
-<<<<<<< HEAD
-"@gooddata/frontend-npm-scripts@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@gooddata/frontend-npm-scripts/-/frontend-npm-scripts-1.0.1.tgz#f13d351c383bf009cf04728eb86a5610be2cc695"
-  integrity sha512-3Szx0DjNucb7Zq7HvF9fZieJTKOYOMI1lCbX/Qgq3XOun08E3iZSclMEHJ6//NtJAZwaf4NevTKQImQylvRpBw==
-  dependencies:
-    firstline "^2.0.2"
-    line-replace "^1.0.2"
-
-"@gooddata/gooddata-js@^11.18.2":
-  version "11.19.0"
-  resolved "https://registry.yarnpkg.com/@gooddata/gooddata-js/-/gooddata-js-11.19.0.tgz#b9cfbdff0bc4cf754c18ea5fe06066c14c2226e4"
-  integrity sha512-p7Ur0U9Nsi0+CLhncOB2BlPuzfuaXjrx9m6r65n/zcRlXusj1CIuJ2CyathslAUkPh0Yw213xnBoKOuZeml0og==
-=======
-"@gooddata/gooddata-js@^11.19.1":
-  version "11.19.1"
-  resolved "https://registry.yarnpkg.com/@gooddata/gooddata-js/-/gooddata-js-11.19.1.tgz#4b19c3c7fbd20f3802f2272d96987a091be27f96"
-  integrity sha512-on99qRdFtCs6QmnYFvlh8pBIR7HeaLVO9EwB7bLctXp5iT7O7aVmVTk//eZL/2fCx/b6bvTwjGZoh0IKvpeuXg==
->>>>>>> RELATED: BB-1690 Use correct versions of @gooddata/typings and gooddata-js
+"@gooddata/gooddata-js@^11.19.2":
+  version "11.19.2"
+  resolved "https://registry.yarnpkg.com/@gooddata/gooddata-js/-/gooddata-js-11.19.2.tgz#bc1f78ac3edc7a9bdd0f6c54f384ade22af5420a"
+  integrity sha512-9LhqMxhLV2h7Z0vvxIBnfzkLEurjr1VhzNbnz55MuF7mmhxs7T/0USMN2pVj48onH+BXd1Hv+jH+0DxXx+326w==
   dependencies:
     "@gooddata/typings" "^2.18.0"
     es6-promise "^3.0.2"
