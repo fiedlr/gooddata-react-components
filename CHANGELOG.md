@@ -15,6 +15,7 @@ The REST API versions in the table are just for your information as the values a
 
 - We ask developers to consider using the Headline component instead of the KPI component. The KPI component may be eventually marked as deprecated in one of the next major versions.
 
+<<<<<<< HEAD
 ## 7.2.0
 
 ### Added
@@ -24,6 +25,16 @@ The REST API versions in the table are just for your information as the values a
 ### Fixed
 
 - Sticky row update in pivot table
+=======
+## 7.1.2
+
+October 17, 2019
+
+### Fixed
+
+- Use latest @gooddata/numberjs dependent package
+
+>>>>>>> TRIVIAL: Update changelog
 ## 7.1.1
 
 October 14, 2019
